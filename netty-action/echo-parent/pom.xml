@@ -1,0 +1,61 @@
+<project>
+    <modelVersion>4.0.0</modelVersion>
+
+    <!--这个demo本身属于netty_action项目的child pom-->
+    <parent>
+        <groupId>muyi.java</groupId>
+        <artifactId>netty-action</artifactId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+
+    <!--<groupId>com.muyi.java</groupId>-->
+    <!--artifactId使用'-' -->
+    <artifactId>echo-parent</artifactId>
+    <packaging>pom</packaging>
+    <!--<version>1.0-SNAPSHOT</version>-->
+    <!--name 使用'_'-->
+    <!--<name>echo_parent</name>-->
+
+    <!--这里代表这是一个聚合pom-->
+    <modules>
+        <module>echo-server</module>
+        <module>echo-client</module>
+    </modules>
+
+    <!--被子项目继承-->
+    <properties>
+        <echo-server.host>localhost</echo-server.host>
+        <echo-server.port>9999</echo-server.port>
+    </properties>
+
+    <!--parent pom的 <dependencies> 被child继承-->
+    <!--这里没有版本的原因是因为继承了 netty_action 中的<dependencyManagement>-->
+    <dependencies>
+        <dependency>
+            <groupId>io.netty</groupId>
+            <artifactId>netty-all</artifactId>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <!--下面可以省略<groupId>的原因是：org.apache.maven.plugins-->
+            <plugin>
+                <artifactId>maven-compiler-plugin</artifactId>
+            </plugin>
+            <plugin>
+                <artifactId>maven-failsafe-plugin</artifactId>
+            </plugin>
+            <plugin>
+                <artifactId>maven-surefire-plugin</artifactId>
+            </plugin>
+
+            <!--第三方plugin还是要写groupId，这里没有version的原因是继承了parent的pluginManagement-->
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>exec-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+
+    </build>
+</project>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>muyi.java</groupId>
+        <artifactId>netty-learn</artifactId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+
+    <artifactId>netty-action</artifactId>
+    <modules>
+        <module>netty-example</module>
+        <module>echo-parent</module>
+        <module>use-jdk</module>
+        <module>use-netty</module>
+        <module>unit-test</module>
+        <module>decoder-encoder</module>
+        <module>netty-https</module>
+    </modules>
+    <packaging>pom</packaging>
+
+    <!--聚合pom的意义是一起打包-->
+    <!--<modules>-->
+    <!--<module>echo_parent</module>-->
+    <!--</modules>-->
+
+    <!--<properties>-->
+    <!--<io.netty.all.version>4.1.23.Final</io.netty.all.version>-->
+    <!--</properties>-->
+
+
+</project>

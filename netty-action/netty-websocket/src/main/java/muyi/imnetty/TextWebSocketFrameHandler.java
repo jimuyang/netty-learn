@@ -36,7 +36,7 @@ public class TextWebSocketFrameHandler
     @Override
     public void userEventTriggered(ChannelHandlerContext ctx, Object evt) throws Exception {
 //        super.userEventTriggered(ctx, evt);
-        if (evt == WebSocketServerProtocolHandler.HandshakeComplete.class) {
+        if (evt instanceof WebSocketServerProtocolHandler.HandshakeComplete) {
             // 握手成功事件
             System.out.println("handshake complete.");
             // 握手成功后 协议已升级 不会再收到HTTP消息了

@@ -30,6 +30,7 @@ public class HttpRequestHandler
                 .getProtectionDomain().getCodeSource().getLocation();
         try {
             String path = location.toURI() + "index.html";
+            System.out.println("index.html path: " + path);
             path = !path.contains("file:") ? path : path.substring(5);
             INDEX_FILE = new File(path);
         } catch (URISyntaxException e) {

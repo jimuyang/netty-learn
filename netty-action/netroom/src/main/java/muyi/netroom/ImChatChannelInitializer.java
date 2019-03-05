@@ -1,4 +1,4 @@
-package muyi.imnetty;
+package muyi.netroom;
 
 import io.netty.channel.Channel;
 import io.netty.channel.ChannelInitializer;

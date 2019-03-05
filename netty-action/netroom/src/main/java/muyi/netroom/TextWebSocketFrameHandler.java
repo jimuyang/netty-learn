@@ -1,4 +1,4 @@
-package muyi.imnetty;
+package muyi.netroom;
 
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.SimpleChannelInboundHandler;

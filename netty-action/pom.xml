@@ -19,7 +19,7 @@
         <module>unit-test</module>
         <module>decoder-encoder</module>
         <module>netty-https</module>
-        <module>netty-websocket</module>
+        <module>netroom</module>
     </modules>
     <packaging>pom</packaging>
 

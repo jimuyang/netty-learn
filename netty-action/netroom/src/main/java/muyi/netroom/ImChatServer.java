@@ -1,4 +1,4 @@
-package muyi.imnetty;
+package muyi.netroom;
 
 import io.netty.bootstrap.ServerBootstrap;
 import io.netty.channel.Channel;

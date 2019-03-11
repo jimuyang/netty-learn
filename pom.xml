@@ -12,7 +12,7 @@
     <modules>
         <module>netty-action</module>
         <module>source-code-learn</module>
-        <module>netty-rpc-muyi.netty.demo</module>
+        <module>netty-rpc-demo</module>
     </modules>
 
     <properties>

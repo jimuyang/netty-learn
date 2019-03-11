@@ -1,6 +1,7 @@
 package muyi.netty.demo.echo;
 
 import io.netty.bootstrap.ServerBootstrap;
+import io.netty.channel.*;
 import io.netty.channel.nio.NioEventLoopGroup;
 import io.netty.channel.socket.SocketChannel;
 import io.netty.channel.socket.nio.NioServerSocketChannel;
@@ -14,7 +15,6 @@ import io.netty.handler.ssl.util.SelfSignedCertificate;
  * @author: Jimu Yang
  * @date: 2019/1/12 10:57 PM
  * @descricption: want more.
- * @see io.netty.example.echo.EchoServer
  */
 public class EchoServer {
 

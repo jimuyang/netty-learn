@@ -8,11 +8,10 @@ import io.netty.channel.ChannelInboundHandlerAdapter;
  * @author: Jimu Yang
  * @date: 2019/1/12 11:04 PM
  * @descricption: want more.
- * @see io.netty.example.echo.EchoServerHandler
+ * @see EchoServerHandler
  */
 @ChannelHandler.Sharable
 public class EchoServerHandler extends ChannelInboundHandlerAdapter {
-
 
     public EchoServerHandler() {
     }

@@ -16,7 +16,8 @@
     </modules>
 
     <properties>
-        <version.netty-all>4.1.33.Final-SNAPSHOT</version.netty-all>
+        <version.netty-all>4.1.33.Final</version.netty-all>
+        <!--<version.netty-all>4.1.33.Final-SNAPSHOT</version.netty-all>-->
         <version.junit>4.12</version.junit>
     </properties>
 
